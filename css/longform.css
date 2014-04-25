@@ -1,0 +1,526 @@
+/* 
+    Created on : Apr 4, 2014
+    Author     : Mike Grill
+*/
+@font-face {
+  font-family: 'Avenir-Black';
+  src: url('../fonts/avenir-black.eot');
+  src: url('../fonts/avenir-black.eot?#iefix') format('embedded-opentype'), url('../fonts/avenir-black.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('../fonts/avenir-book.eot');
+  src: url('../fonts/avenir-book.eot?#iefix') format('embedded-opentype'), url('../fonts/avenir-book.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir-Heavy';
+  src: url('../fonts/avenir-heavy.eot');
+  src: url('../fonts/avenir-heavy.eot?#iefix') format('embedded-opentype'), url('../fonts/avenir-heavy.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url('../fonts/avenir-medium.eot');
+  src: url('../fonts/avenir-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/avenir-medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir-MediumOblique';
+  src: url('../fonts/avenir-mediumoblique.eot');
+  src: url('../fonts/avenir-mediumoblique.eot?#iefix') format('embedded-opentype'), url('../fonts/avenir-mediumoblique.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir-Roman';
+  src: url('../fonts/avenir-roman.eot');
+  src: url('../fonts/avenir-roman.eot?#iefix') format('embedded-opentype'), url('../fonts/avenir-roman.woff') format('woff');
+}
+
+body, html{
+    color:black;
+    font-family: "Avenir-Medium";
+    font-size:20px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Avenir-Black";
+    color: #44c1c3;
+}
+strong{
+    font-weight:normal;
+    font-family:"Avenir-Black";
+}
+
+/* Colors */
+.light-gray-bg{ background-color:#f5f5f5; }
+.dark-gray-bg{ background-color:#ececec; }
+.green-bg{ background-color:#44c1c3; }
+.orage-bg{ background-color: #ff6600; }
+
+/* Fonts */
+.avenir-roman{ font-family:"Avenir-Roman"; }
+
+/*Generic Button Styles*/
+a.btn,
+a.btn:hover,
+a.btn:visited,
+button{
+    border:none;
+    border-radius: 10px;
+    background-color: #ff6600;
+    color:white;
+    font-size:17px;
+    font-family: "Avenir-Heavy";
+    text-align:center;
+    padding-left:12px;
+    padding-right:12px;
+    height:40px;
+    line-height: 28px;
+}
+
+.down-arrow{
+    position:absolute;
+}
+
+.light-shadow{
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+}
+
+
+ul, li{
+    font-family: "Avenir-Roman";
+    font-size:17px;
+    line-height:1.2em;
+    list-style:none;
+    padding:0px;
+    margin:0px;
+}
+li{
+    margin-bottom:1em;
+}
+ul.checks li{
+    background:url('../images/check.png') left center no-repeat;
+    padding-left: 45px;
+}
+ul.right-align li{
+    padding-left: 0px;
+    padding-right: 45px;
+    background-position: right center;
+}
+
+/* Page Styles */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Header Section */
+div.header{
+    color:white;
+    background:url('../images/section1bg.jpg') center top;
+    padding-bottom:1em;
+}
+.header .logo{
+    line-height:115px;
+}
+div.header .logo > div,
+div.header .testimonial > div{
+    padding-left:0px;
+}
+.testimonial .image-column {
+    text-align: center;
+}
+
+div.as-seen-on .container{
+    padding:1em 0em 1em 0em;
+}
+
+/* Facebook Section */
+div.facebook .container{
+    font-family:"Avenir-Book";
+    font-size:37px;
+    line-height:1.2em;
+    padding-bottom:1em;
+}
+div.facebook img{
+    padding-top:1em;
+    padding-bottom:1em;
+    width:100px;
+}
+
+
+/* Graph Section */
+div.graph .container {
+    position:relative;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+div.graph .container .down-arrow{
+    left:5%;
+    top:0px;
+    width:70px;
+    height:24px;
+    background:url('../images/arrow_white-over-dark-gray.png') center top no-repeat;
+}
+div.graph h1{
+    padding-bottom:1em;
+}
+div.graph .statement{
+    font-family:"Avenir-Roman";
+    font-size:17px;
+    padding:.5em 0px .5em 2.5em;
+    background: url('../images/orangedot.png') left center no-repeat;
+}
+div.graph hr.bottom-rule{
+    border-bottom:1px solid #a6a6a6;
+}
+
+/* Free trial */
+div.free-trial .container{
+    color:white;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+    .div.free-trial .leading{
+        font-size:24px;
+    }
+    
+    .free-trial .container span{
+        font-size:37px;
+        font-family: "Avenir-Black";
+    }
+    
+    .free-trial .container a.btn,
+    .free-trial .container button{
+        vertical-align:super;
+        font-size:20px;
+        margin-left:1em;
+    }
+
+/* Campaign Builder */
+div.campaign-builder{
+    padding-top:1em;
+}
+div.campaign-builder .footnote{
+    font-size:1em;
+    color: #44c1c3;
+}
+div.campaign-builder .screenshotRow{
+    padding-top:2em;
+}
+div.campaign-builder .screenshotRow img{
+    width:100%;
+    padding-top:2em;
+}
+div.campaign-builder ul{
+    list-style:none;
+    padding:0px;
+    margin:0px;
+}
+div.campaign-builder li{
+    padding:0px 0px 1.5em 45px;
+    line-height:1.3em;
+    margin:0px;
+    background: url('../images/orange_plus.png') left 15% no-repeat;
+}
+
+div.apps .container{
+    position:relative;
+    padding:2em 0 2em 0;
+}
+div.apps .container .down-arrow{
+    left:77%;
+    top:0px;
+    width:73px;
+    height:26px;
+    background:url('../images/arrow_white-over-light-gray.png') center top no-repeat;
+}
+
+/* Sweepstakes */
+div.sweepstakes h2{ text-decoration: underline; }
+div.video-contest h2{ text-decoration: underline; }
+div.group-deal h2{ text-decoration: underline; }
+div.special-offer h2{ text-decoration: underline; }
+div.sweepstakes img,
+div.video-contest img,
+div.group-deal img,
+div.special-offer img{
+    width:100%;
+}
+
+div.pricing{
+    color:#44c1c3;
+    background:#f5f5f5 url(../images/arrow_white-over-light-gray.png) center top no-repeat;
+    padding-top:75px;
+    padding-bottom:100px;
+}
+div.pricing .cost{
+    font-family:"Avenir-Black";
+    font-size:16px;
+}
+div.pricing .cost .yearly{
+    font-size:130px;
+    line-height:1.1em;
+}
+div.pricing .per-month,
+div.pricing hr{
+    width:50%;
+    border-color:#cfcfcf;
+}
+div.pricing ul{
+    font-family:"Avenir-Medium";
+    color:#959595;
+    list-style:none;
+    display:inline-block;
+    margin-left:10px;
+    padding:50px 0px 50px 0px;
+    width:260px;
+}
+div.pricing ul li{
+    float:left;
+    width:260px;
+    background: url(../images/check.png) left center no-repeat;
+    padding:0px 0px 0px 40px;
+    text-align:left;
+}
+div.pricing .paynow{
+    font-family: "Avenir-Black";
+}
+div.pricing .paynow span{
+    font-size:30px;
+    margin-right:20px;
+}
+div.pricing .paynow a.btn,
+div.pricing .paynow button{
+    vertical-align: super;
+}
+    
+/* Testimonials */
+div.testimonial .container{
+    color:White;
+    font-size:25px;
+    line-height:1.2em;
+    padding:2em 0px 2em 0px;
+}
+    
+.testimonial h2{
+    color:white;
+}
+div.testimonial p.testimonial{ font-family:"Avenir-Heavy"; }
+div.testimonial p.name { font-family:"Avenir-MediumOblique"; }
+div.testimonial img{
+    padding-bottom:1em;
+}
+/* Footer */
+.footer{
+    color:#505051;
+    font-family: "Avenir-Roman";
+    font-size:12px;
+    padding-top:50px;
+    padding-bottom:300px;
+}
+
+@media (max-width:768px){
+    .screenshotColumn{
+        display:none;
+    }
+    div.sweepstakes img,
+    div.video-contest img,
+    div.group-deal img,
+    div.special-offer img{
+        display:none;
+    }
+}
+@media (max-width:580px){
+    .screenshotColumn{
+        display:none;
+    }
+
+}
+
+@media (min-width:580px) {
+    div.pricing ul{
+        
+    }
+    
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) {
+
+    .testimonial .image-column {
+        text-align: left;
+    }
+    
+    div.sweepstakes{ padding-bottom:75px; }
+    div.sweepstakes .left-side{ width:48%; }
+    div.sweepstakes .left-side img{ margin-top:5px; }
+    div.sweepstakes .right-side{ width:52%; }
+    div.sweepstakes .right-side h2{ margin:0px 0px 20px 0px; }
+    
+    div.video-contest{
+        padding-bottom:60px;
+    }
+    div.video-contest .left-side{ 
+        padding-top:32px;
+        width:52%;
+    }
+    div.video-contest .left-side h2{
+        margin:20px 0px 35px 0px;
+    }
+    div.video-contest .right-side{ width:48%; }
+    div.video-contest .right-side img{
+        position:absolute;
+        top:-75px;
+    }
+    
+    div.group-deal{
+        padding:70px 0px 200px 0px;
+    }
+    div.group-deal .left-side{
+        position:relative;
+        width:48%;
+    }
+    div.group-deal .left-side img{
+        position:absolute;
+        right:15px;
+        margin-top:5px;
+    }
+    div.group-deal .left-side{ width:48%; }
+    div.group-deal .right-side{ width:52%; }
+    div.group-deal .right-side h2{
+        margin:0px 0px 20px 0px;
+    }
+    
+    
+    div.special-offer{
+        padding:70px 0px 70px 0px;
+    }
+    div.special-offer .left-side{ width:52%; }
+    div.special-offer .right-side{ width:48%; }
+    div.special-offer .right-side img{
+        position:absolute;
+        top:-130px;
+    }
+    div.special-offer .left-side h2{
+        margin:20px 0px 30px 0px;
+    }
+    
+    div.sweepstakes .left-side{ width:47%; }
+    div.sweepstakes .right-side{ width:52%; }
+    div.video-contest .left-side{ width:52%; }
+    div.group-deal .left-side{ width:47%; }
+    div.group-deal .right-side{ width:52%; }
+    div.special-offer .left-side{ width:52%; }
+    
+    div.sweepstakes .left-side img{ width:343px; }
+    div.video-contest .right-side img{ width:343px; }
+    div.group-deal .left-side img{ width:343px; }
+    div.special-offer .right-side img{ width:342px; }
+    
+    div.pricing ul{
+        width:520px;
+    }
+    
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+ 
+    div.header .testimonial h2{
+        margin-top:1em;
+    }
+        
+    div.facebook img{
+        padding-top:0px;
+        width:130px;
+    }
+    .facebook .container{
+        padding-top:75px;
+        padding-bottom:75px;
+    }
+    div.campaign-builder .screenshotColumn{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    div.campaign-builder .screenshotRow img{ padding-top:3em; }
+    
+    div.sweepstakes .left-side{ width:47%; }
+    div.group-deal .left-side{ width:47%; }
+    
+    div.pricing ul{
+        width:780px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    body > .container{
+        width:1200px;
+    }
+    
+    div.header{
+        padding:0px;
+    }
+    .header .container{
+        height:515px;
+    }
+    .header .container div.testimonial{
+        padding-right:35px;
+        font-size:20px; /* slightly smaller testimonial text than default */
+    }
+    div.header .testimonial h2{
+        margin-top:2em;
+    }
+    
+    .as-seen-on img{
+        margin-left:25px;
+    }
+
+    div.facebook img{
+        width:160px;
+    }
+
+    #graph{
+        position:relative;
+        height:550px;
+        background-image:url('../images/graph-1200.png');
+        background-position: left 40px;
+        background-repeat: no-repeat;
+    }
+    div.graph .statement{
+        background:none;
+        margin:0px;
+        padding:0px;
+    }
+    .graphPoint {
+        position:absolute;
+    }
+    .point1{ left:0px; top:510px;   width:300px; }
+    .point2{ left:136px; top:423px; width:320px; }
+    .point3{ left:308px; top:310px; width:360px; }
+    .point4{ left:425px; top:188px; width:265px; }
+    .point5{ left:720px; top:237px; width:315px; }
+    .point6{ left:840px; top:162px; width:275px; }
+    .point7{ left:928px; top:33px;  width:151px; }
+   
+
+    div.campaign-builder .screenshotColumn{
+        width:71%;
+    }
+    div.campaign-builder .bullets{
+        width:29%;
+        padding-top:2em;
+    }
+    div.campaign-builder .screenshotRow img{
+        padding-top:0em;
+    }
+
+    div.sweepstakes .left-side{ width:48%; }
+    div.group-deal .left-side{ width:48%; }
+    
+    div.testimonial .container .col-xs-10{
+        padding-right:55px;
+    }
+    
+}
+
